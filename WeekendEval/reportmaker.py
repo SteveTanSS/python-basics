@@ -77,9 +77,9 @@ def voc_report(fp):
         logging.info('Promoter score of ' + str(voc_ss_data['January']['Passives']) + " : Bad" )
 
     #If-Elseif statements based on the Detractors score. Log either good or bad
-    if (voc_ss_data['January']['Detractors'] > 100):
+    if (voc_ss_data['January']['Detractors'] < 100):
         logging.info('Promoter score of ' + str(voc_ss_data['January']['Detractors']) + " : Good" )
-    elif (voc_ss_data['January']['Detractors'] <= 100):
+    elif (voc_ss_data['January']['Detractors'] >= 100):
         logging.info('Promoter score of ' + str(voc_ss_data['January']['Detractors']) + " : Bad" )
 
 
