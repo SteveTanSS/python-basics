@@ -35,6 +35,7 @@ def load_report(input):
         #create a dictionary entry with key value as the month name and the value as a list of all the values
         summary_ss_data[row_name] = row_data
     
+    print(summary_ss_data)
 
     # Logging the report based off the month given and taking the values from the dictionary
     logging.basicConfig(filename='expedia_report.log', encoding='utf-8', level=logging.DEBUG)
@@ -85,7 +86,7 @@ def voc_report(fp):
 
 
 # voc_report('Python-Basics\WeekendEval\expedia_report_monthly_january_2018.xlsx')
-load_report("March(Python-Basics\WeekendEval\expedia_report_monthly_january_2018.xlsx)")
+# load_report("March(Python-Basics\WeekendEval\expedia_report_monthly_january_2018.xlsx)")
 
 
 
