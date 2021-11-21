@@ -1,9 +1,8 @@
-
+import pathlib
 import numpy as np
 import pandas as pd
 
-
-# TODO Check and display the head of the DataFrame
+# 1. Check and display the head of the DataFrame
 df = pd.read_csv('Python-Basics\Day7\two_pandas_Salaries.csv')
 
 print(df.head())
